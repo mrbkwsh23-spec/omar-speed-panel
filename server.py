@@ -23,7 +23,7 @@
     <meta name="google-site-verification" content="jkUAIOE8owUXu8UXIhRLB9oHJsWBfOgJbZzncqHoF4A" />
     <link rel="canonical" href="https://pastebin.com/" />
         <meta name="csrf-param" content="_csrf-frontend">
-<meta name="csrf-token" content="7e88dIUkZ6DESaVLwir4tRIhubd4iyu5NKy7rCiBry_fmUkc1k9TlJQKkhira6_jYUrR3wLxXvNwwtX_XbLbfw==">
+<meta name="csrf-token" content="oaBTyIMwI9mGfX5RtO6Gon8eoPNnLOO4iEDbXi_NzcDCzSqsynto6OUKNiDxgvHJSWztxQ5WpcDeLp0bYqyegw==">
 
 <link href="/assets/c80611c4/css/bootstrap.min.css" rel="stylesheet">
 <link href="/assets/ff2ff0b/css/select2.min.css" rel="stylesheet">
@@ -120,7 +120,7 @@ window.select2_a09a7382 = {"theme":"default","width":"100%","minimumResultsForSe
 <div class="post-form  js-post-form">
 
     <form id="w0" class="js-create-form form-horizontal" action="/" method="post" enctype="multipart/form-data">
-<input type="hidden" name="_csrf-frontend" value="zOi7oAP2kXENDfHyl1F47g0YDV5cxaPVXXv3Sr-dVWKrhIjQQsCoHV11pcWiBjS8dHs9axj2zr0ZKJQ8i_gQBQ==">
+<input type="hidden" name="_csrf-frontend" value="PgOwnz8ugRb4uY7wpqWPgqciqKUj8Fuf3cSyTrxNrIhKUv7XXnTqUZCOv6mRkrbulhrjykrBIa-7s8AE3hnI0g==">
     <div class="error-summary" style="display:none"><p>Please fix the following errors:</p><ul></ul></div>
     <div class="content__title -no-border">
         New Paste
