@@ -3,7 +3,6 @@ import os
 
 app = Flask(__name__)
 
-# نسخة العالم الآخر الكاملة 2026 - دمج الأفكار الأربعة كاملة مجتمعة بدون أي نقص
 HTML_CODE = """
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -76,7 +75,6 @@ HTML_CODE = """
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            /* الإطار الدائري يتغير لونه ديناميكياً مع السرعة (Eco/Sport) */
             background: conic-gradient(var(--dynamic-ring) 0deg, #ff007f 180deg, var(--dynamic-ring) 240deg, #121824 240deg);
             display: flex;
             align-items: center;
@@ -206,8 +204,6 @@ HTML_CODE = """
         let lastLat = null, lastLon = null, lastTime = null;
         let totalDistance = 0.0;
         let maxSpeed = 0.0;
-
-        // متغيرات مؤقت التسارع الخفي الذكي
         let timerStart = null;
         let timerRunning = false;
         let accTimeFinal = 0.0;
@@ -242,7 +238,6 @@ HTML_CODE = """
             if (speed < 0.5) speed = 0.0;
             speedDisplay.innerText = speed.toFixed(1);
             
-            // 🛠️ ميزة 1: مؤقت التسارع الذكي من 0 إلى 60 كم/ساعة
             if (speed === 0.0) {
                 if (!timerRunning && accTimeFinal === 0.0) {
                     accTimerDisplay.innerText = "0.00ث";
@@ -266,20 +261,19 @@ HTML_CODE = """
                 }
             }
 
-            // ميزة إعادة تصفير مؤقت التسارع تلقائياً إذا وقفت السيارة مجدداً لبدء تحدٍ جديد
             if (speed === 0.0 && !timerRunning) {
                 timerStart = null;
                 accTimeFinal = 0.0;
             }
 
-            // 🛠️ ميزة 2: تغيير لون الإطار ديناميكياً وعضوياً (Eco/Sport)
             if (speed < 50.0) {
-
-
-
-
-
-
-
-
+                document.documentElement.style.setProperty('--dynamic-ring', '#39ff14');
+            } else if (speed >= 50.0 && speed < 90.0) {
+                document.documentElement.style.setProperty('--dynamic-ring', '#ffaa00');
+            } else {
+                document.documentElement.style.setProperty('--dynamic-ring', '#ff0055');
+            }
+            
+            if (speed > maxSpeed) {
+                maxSpeed = speed;
 
